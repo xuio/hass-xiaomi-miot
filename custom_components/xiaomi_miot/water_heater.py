@@ -352,7 +352,7 @@ class MiotWaterHeaterEntity(MiotToggleEntity, WaterHeaterEntity):
                 "did": str(did),
                 "siid": 3,
                 "piid": 12,
-                "value": f"{kw_temp},1,{kw_temp},{kw_time}",
+                "value": f"{keep_warm_temp},1,{keep_warm_temp},{keep_warm_time}",
             },
         ]
         return self._send_kettle_props(props)
